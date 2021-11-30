@@ -68,3 +68,8 @@ pipeline {
     }
 }
 
+
+
+// Then For Query in Grafana
+// SELECT distinct("yo") FROM "jenkins_custom_data" WHERE ("project_name" = 'Test_show') AND $timeFilter GROUP BY time($__interval) fill(null)
+// SELECT distinct("end_t") FROM "jenkins_custom_data" WHERE ("project_name" = 'Test_show') AND $timeFilter GROUP BY time($__interval) fill(null)
